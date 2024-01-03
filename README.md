@@ -10,6 +10,8 @@ I've created this template to create an isolated enviroment for developing pytho
 - (optional, checkout branch `pycharm`) Small bashscript to load PyCharm from the terminal, while suppressing stdout
 
 ### How to use:
+
+#### Initial set-up
 1. Fork this repo and `git checkout`
 2. cd into the folder
 3. Modify `pyproject.toml` according to your project
@@ -25,6 +27,14 @@ I've created this template to create an isolated enviroment for developing pytho
         - Settings > Add New Interpreter > Virtual Environment
         - Check **Existing** 
         - Paste the copied path from step 7.2 
+
+### Adding packages (⚠️ cumbersome, WIP 🚧)
+Currently, pycharm needs to restarted after installing new python packages. I'm looking into ways to fix this, might be (very) complicated/impossible.
+1. Modify `pyproject.toml
+2. Re-enable environment (see step 4/5 above)
+3. Update `lock.json` (see above)
+4. Save your work and close PyCharm
+5. Re-run PyCharm from the terminal
 
 Please let me know in case something is not clear, doesn't work as described or can be improved.
 
