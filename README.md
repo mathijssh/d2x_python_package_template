@@ -1,7 +1,7 @@
 # dream2nix python package template (w/ optional PyCharm and direnv features)
 I've created this template to create an isolated enviroment for developing python projects using Pycharm (Community Edition) from JetBrains.
 
-Features:
+### Features:
 - Uses [dream2nix](https://github.com/nix-community/dream2nix), to maximize reproduciblity of python packaging
   - Based on the example in [`examples/packages/single-language/python-project`](https://github.com/nix-community/dream2nix/tree/67c1356f20b5f0495c46f1f25c45327a9e604c56/examples/packages/single-language/python-project).
   - Modified to move most parameter configuration to `pyproject.toml`
@@ -9,7 +9,7 @@ Features:
 - (optional, checkout branch `direnv`) Added `.envrc` to automatically load shell environment using [direnv](https://github.com/direnv/direnv/)
 - (optional, checkout branch `pycharm`) Small bashscript to load PyCharm from the terminal, while suppressing stdout
 
-How to use:
+### How to use:
 1. Fork this repo and `git checkout`
 2. cd into the folder
 3. Modify `pyproject.toml` according to your project
